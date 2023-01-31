@@ -30,4 +30,27 @@ $(document).ready(function() {
     let hour = $(this).siblings(".time-block").attr("id");
     localStorage.setItem(hour, event);
   });
+
+  $(document).ready(function() {
+    $(".saveBtn").on("click", function() {
+      var timeBlockId = $(this)
+        .parent()
+        .attr("id");
+      var calendarItem = $(this)
+        .siblings(".calendar-item")
+        .val();
+      localStorage.setItem(timeBlockId, calendarItem);
+    });
+  
+    $.each($(".time-block"), function(index, value) {
+      var timeBlockId = $(value).attr("id");
+      var savedCalendarItem = localStorage.getItem(timeBlockId);
+      if (savedCalendarItem) {
+        $(value)
+          .find(".calendar-item")
+          .val(savedCalendarItem);
+      }
+    });
+  });
+  
 })
