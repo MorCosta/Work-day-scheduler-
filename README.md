@@ -9,7 +9,7 @@ The user just need to navigate to the this link: https://morcosta.github.io/Work
 ## Usage
 Once on the page, the user can save events in the time blocks. By doing so, the events will be saved in the Local storage, and they will be retrived even if the user refresh the page. The time blocks will change colour based on the time of the day. The time blocks previous the present hour will be gray, the time block for the actual hour will be red, and the future time blocks will be green.
 
-![alt text](Work-day-scheduler-/assets/Images/Screenshot.png)
+![alt text](/Work-day-scheduler-/assets/Images/Screenshot.png)
 
 
 
