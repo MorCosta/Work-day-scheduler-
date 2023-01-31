@@ -17,6 +17,7 @@ $(document).ready(function() {
     }
   });
 
+
   // Retrieve saved events from local storage and populate text areas
   for (let i = 9; i < 18; i++) {
     let event = localStorage.getItem(i.toString());
@@ -29,6 +30,4 @@ $(document).ready(function() {
     let hour = $(this).siblings(".time-block").attr("id");
     localStorage.setItem(hour, event);
   });
-});
-
-
+})
