@@ -7,10 +7,8 @@ In this project, I worked to create a quiz, using HTML, CSS and JavaScript, JQue
 The user just need to navigate to the this link: https://morcosta.github.io/Code-quiz/
 
 ## Usage
-Once on the page, the user can click on the Start Quiz button. By doing so, the quiz will start, activating a count down timer of thirty seconds, and showing a question
-with multiple choices. The quiz will display the word "correct"or "incorrect" based on the answer the user picked. For every wrong answer, 10 seconds will be detracted by
-the timer. The game ends when the user answered all the questions, or when the timer reaches 0.
-Once the game is over, the users can leave their initials, and these will be displayed with their scores on another page. The users will also have the option to clear the highscore.
+Once on the page, the user can save events in the time blocks. By doing so, the events will be saved in the Local storage, and they will be retrived even if the user refresh the page. The time blocks will change colour based on the time of the day. The time blocks previous the present hour will be gray, the time block for the actual hour will be red, and the future time blocks will be green.
+
 ![alt text](assets/Images/Screenshot.png)
 
 
